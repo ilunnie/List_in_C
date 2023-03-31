@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// estrutura de uma lista
 typedef struct list {
     int value;
     struct list *proximo;
 } List;
 
+// Adiciona um novo indice
 List* newIndice(List *lista, int value){
     List *novo_elemento = (List*)malloc(sizeof(List));
     novo_elemento->value = value;
@@ -24,6 +26,7 @@ List* newIndice(List *lista, int value){
     return lista;
 }
 
+// Mostra a lista no console
 void printl(List *lista){
     printf("[");
     while (lista != NULL){
@@ -33,6 +36,7 @@ void printl(List *lista){
     printf("]\n");
 }
 
+// retorna o valor de um indice
 List* getI(List *lista, int indice){
     int i;
     List *atual = lista;
@@ -44,6 +48,7 @@ List* getI(List *lista, int indice){
     return atual;
 }
 
+// main para testar as funções
 int main(){
     List *teste = NULL;
 
