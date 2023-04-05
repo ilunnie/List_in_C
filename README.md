@@ -11,6 +11,6 @@
 |----|----|
 | newIndice(List lista, valor, DataType tipo) | Adiciona um novo valor na lista
 | printl(List lista) | Mostra a lista no console
-| *(DataType tipo*) getIndex(List lista, int index) | Retorna o valor salvo em um índice
+| \*(DataType tipo\*) getIndex(List lista, int index) | Retorna o valor salvo em um índice
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=212b97&height=120&section=footer"/>
